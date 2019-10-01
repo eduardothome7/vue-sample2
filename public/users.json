@@ -1,0 +1,23 @@
+[ 
+    { 
+       "id":1,
+       "name":"Eduardo Thome",
+       "email":"eduardocanninithome@hotmail.com",
+       "date_birth":"",
+       "picture":"\/1\/profile.jpg"
+    },
+    { 
+       "id":2,
+       "name":"Lucas Seixas",
+       "email":"lucas.seiixas@hotmail.com",
+       "date_birth":"805176000",
+       "picture":"\/2\/profile.jpg"
+    },
+    { 
+       "id":3,
+       "name":"Bruno Camboim",
+       "email":"brunocamboim@hotmail.com",
+       "date_birth":"845006400",
+       "picture":"\/3\/profile.jpg"
+    }
+ ]

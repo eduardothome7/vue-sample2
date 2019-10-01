@@ -18,6 +18,12 @@ export default new Router({
       name: "about",
       component: () =>
         import("./views/About.vue")
+    },
+    {
+      path: "/show/:id",
+      name: "show",
+      component: () =>
+        import("./views/Show.vue")
     }
   ]
 });
