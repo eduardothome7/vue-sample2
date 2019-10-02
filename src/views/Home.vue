@@ -30,6 +30,7 @@ export default {
     HelloWorld
   },
   mounted () {
+    this.$notification.new("hello world", {  timer: 10 });
     axios
       .get('https://jsonplaceholder.typicode.com/todos')
       .then(response => (this.info = response.data))

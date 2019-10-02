@@ -1,6 +1,8 @@
 <template>
+  <!-- <button v-on:click="open(i.id)"></button> -->
   <div class="show">
-      {{ user }}
+    <!-- <router-link to="/">Home</router-link> -->
+    {{ user }}
     <p>
         <strong>#</strong>{{ user.id }}
     </p>
@@ -27,6 +29,11 @@ export default {
 //   components: {
 //     HelloWorld
 //   },
+  methods: {
+    back(){
+      this.$router.back()
+    }
+  },
   mounted () {
     const id = this.$route.params.id
     console.log(`https://jsonplaceholder.typicode.com/todos/${id}`)
