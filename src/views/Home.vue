@@ -1,10 +1,12 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <!-- info: {{ info }} -->
-    <div v-for='i in info'>
-      <p v-on:click="open(i.id)">{{ i.id }}</p>
+    <div class="md-elevation-1" v-for='i in info'>
+      <div v-on:click="open(i.id)">
+        <h4><strong>#{{ i.id }}</strong> {{ i.title }}</h4>
+        <p>{{ i.completed }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -30,7 +32,7 @@ export default {
     HelloWorld
   },
   mounted () {
-    this.$notification.new("hello world", {  timer: 10 });
+    // this.$notification.new("hello world", {  timer: 10 });
     axios
       .get('https://jsonplaceholder.typicode.com/todos')
       .then(response => (this.info = response.data))
